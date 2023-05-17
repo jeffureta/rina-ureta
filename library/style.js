@@ -1,7 +1,7 @@
-import { wrapperColor, overlayColor,
-        iconsColorPrimary} from "./variables.js"
+import { wrapperColor, overlayColor} from "./variables.js"
 import { hoverOverlay, hoverIcons } from "./hover.js"   
-import { flexCenter } from "./flexcenter.js"     
+import { flexCenter } from "./flexcenter.js"  
+import { animateTextOnHover } from "./animatetext.js"   
 
 $(function(){
     $(".wrapper").css(
@@ -18,6 +18,12 @@ $(function(){
             "cursor": "pointer",
             "border": "12px",
             "border-radius": "35px"
+        }
+    )
+    $(".profile a").css(
+        {
+            "text-decoration": "none",
+            "color": "white" 
         }
     )
     $(".overlay").css(
@@ -69,4 +75,6 @@ $(function(){
 hoverOverlay();
 
 hoverIcons();
+
+animateTextOnHover();
 

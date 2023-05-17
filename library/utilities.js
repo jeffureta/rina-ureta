@@ -1,15 +1,16 @@
 export class Profile {
-    constructor(name,title, links, url) {
+    constructor(name,title,website,links,url) {
         this.name = name;
         this.title = title;
+        this.website = Object.entries(website);
         this.links = links;
         this.url = url;
     };
-    static structure(name,title,links,url) { 
+    static structure(name,title,website,links,url) { 
         const socialMediaLinks = Object.entries(links)
             .map(([key,value]) => `<li><a href="${value}" target="_blank"><i class="bi bi-${key}"></i></a></li>`)
             .join("");
-        // console.log(socialMediaLinks);
+        const websiteLink = `<a href="${website.href}" target="_blank">${website.text}</a>`;
         return $("<div>").addClass("profile")
         .css(
             {
@@ -21,6 +22,7 @@ export class Profile {
             `<div class="overlay">
                 <div class="about d-flex flex-column">
                     <h4>${name}</h4> <span>${title}</span>
+                    ${websiteLink}
                 </div>
                 <ul class="social-icons">
                     ${socialMediaLinks}
