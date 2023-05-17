@@ -1,10 +1,10 @@
 import { Profile } from "./library/utilities.js";
 
 const socialMediaAccounts = {
-    "github" : "https://github.com/jeffureta",
-    "twitter" : "https://twitter.com/jepoyureta",
-    "table" : "https://www.kaggle.com/jeffureta",
-    "linkedin" : "https://www.linkedin.com/in/jeffureta/"
+    "instagram" : "https://www.instagram.com/rina_ureta",
+    "twitter" : "https://twitter.com/rina_ureta",
+    "facebook" : "https://www.facebook.com/mrs.rinaureta",
+    "tiktok" : "https://www.tiktok.com/@rjgcureta"
 }
 
 const myProfile = Profile.structure(
