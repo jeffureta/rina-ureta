@@ -8,7 +8,7 @@ const socialMediaAccounts = {
 }
 
 const myProfile = Profile.structure(
-    "Rina Ureta", "Flight Attendant", 
+    "Rina Ureta", "wife", 
     socialMediaAccounts, "./images/IMG_3509.jpg"
     )
 $(".wrapper").append(myProfile)
